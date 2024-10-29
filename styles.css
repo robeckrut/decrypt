@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.blur-box {
+    padding: 10%;
+    backdrop-filter: blur(10px);
+    box-shadow: 12px 9px 24px 1px rgba(0,0,0,0.8);
+    border-radius: 10px;
+    color: white;
+    line-height: 2;
+    text-align: center;
+}
+
+marquee {
+    background-color: grey;
+    color: white;
+}
+
+.payment-info{
+    width: 80%;
+    margin: 50px auto;
+
+}
+
+.product-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.login-container {
+    background: url(https://www.rewire.com/wp-content/uploads/2021/12/iStock-914609710-copy.jpg);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#form {
+    display: none;
+    transition: 0.3s;
+}
+
+#accessKey {
+    padding: 1% 3%;
+    width: 200px;
+}
+
+.spinner-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+#error-message {
+    color: red;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+@media (width > 480px) {
+    /* * {
+        display: none;
+    } */
+    .product-container {
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
